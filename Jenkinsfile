@@ -28,8 +28,7 @@ pipeline{
         }
         stage("Deploy"){
             steps{
-                echo "Deployment of image"
-                
+                echo "Deployment of container"
                 sh "docker-compose down && docker-compose up -d"
             }
         }
